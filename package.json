@@ -1,0 +1,33 @@
+{
+  "name": "scss-masterclass",
+  "description": "(S)CSS Layout: Flex & Grid",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rosenrose/scss-masterclass.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rosenrose/scss-masterclass/issues"
+  },
+  "homepage": "https://github.com/rosenrose/scss-masterclass#readme",
+  "dependencies": {
+    "@babel/core": "^7.17.5",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/register": "^7.17.0",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-csso": "^4.0.1",
+    "gulp-sass": "^5.1.0",
+    "node-sass": "^7.0.1"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ]
+}
