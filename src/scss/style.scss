@@ -1,5 +1,74 @@
+@import "_variables";
+@import "_mixins";
+@import "_button";
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  // background-color: $bg;
 }
+
+h2 {
+  color: red;
+}
+.box {
+  margin-top: 5em;
+  h2 {
+    color: blue;
+    &:hover {
+      color: yellow;
+    }
+  }
+  button {
+    color: green;
+  }
+  &:hover {
+    background-color: blue;
+  }
+}
+
+// h1 {
+//   font-size: $title;
+//   @include goodTitle();
+// }
+h1 {
+  color: red;
+  @include responsive("phone") {
+    color: yellow;
+  }
+  @include responsive("tablet") {
+    color: blue;
+  }
+  @include responsive("pc") {
+    color: green;
+  }
+}
+
+// a {
+//   // @include link();
+//   @include goodTitle();
+//   &:nth-child(odd) {
+//     // @include link(green);
+//     @include link2("odd");
+//   }
+//   &:nth-child(even) {
+//     // @include link(brown);
+//     @include link2("even");
+//   }
+// }
+
+// a {
+//   @extend %button;
+//   text-decoration: none;
+// }
+// button {
+//   @extend %button;
+//   border: none;
+// }
+
+// a {
+//   @include responsive {
+//     text-decoration: none;
+//   }
+// }

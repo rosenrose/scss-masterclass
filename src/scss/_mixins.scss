@@ -1,0 +1,43 @@
+@mixin goodTitle {
+  color: blue;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+@mixin link($color) {
+  text-decoration: none;
+  display: block;
+  color: $color;
+}
+@mixin link2($word) {
+  text-decoration: none;
+  display: block;
+  @if $word == "odd" {
+    color: green;
+  } @else {
+    color: brown;
+  }
+}
+
+$maxPhone: 768px;
+$minTablet: $maxPhone + 1;
+$maxTablet: 1024px;
+$minPc: $maxTablet + 1;
+$maxPc: 1920px;
+@mixin responsive($device) {
+  // @content;
+  // color: red;
+  @if $device == "phone" {
+    @media screen and (max-width: $maxPhone) {
+      @content;
+    }
+  } @else if $device == "tablet" {
+    @media screen and (min-width: $minTablet) and (max-width: $maxTablet) {
+      @content;
+    }
+  } @else if $device == "pc" {
+    @media screen and (min-width: $minPc) and (max-width: $maxPc) {
+      @content;
+    }
+  }
+}
