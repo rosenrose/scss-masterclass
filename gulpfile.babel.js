@@ -10,7 +10,7 @@ const sass = gulp_sass(node_sass);
 const routes = {
   css: {
     watch: "src/scss/*",
-    src: "src/scss/style.scss",
+    src: "src/scss/*",
     dest: "dest/css",
   },
 };
@@ -19,13 +19,13 @@ const styles = () =>
   gulp
     .src(routes.css.src)
     .pipe(sass().on("error", sass.logError))
-    .pipe(autoprefixer({ flebox: true, grid: "autoplace" }))
+    .pipe(autoprefixer({ flexbox: true, grid: "autoplace" }))
     .pipe(minify())
     .pipe(gulp.dest(routes.css.dest));
 
 const watch = () => gulp.watch(routes.css.watch, styles);
 
-const clean = () => del(["dest/style.css"]);
+const clean = () => del(["dest/css/*"]);
 
 const prepare = gulp.series([clean]);
 
