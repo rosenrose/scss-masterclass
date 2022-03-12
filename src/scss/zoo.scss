@@ -45,6 +45,11 @@ header {
         label.sideMenu-open {
           background-color: $zoo_bg;
         }
+
+        .ul-right {
+          display: grid;
+          grid-template-columns: 1fr 2fr;
+        }
       }
     }
 
@@ -62,13 +67,11 @@ header {
         padding-bottom: 10px;
         text-transform: lowercase;
 
-        &.nav-left {
+        &.ul-left {
           display: flex;
           align-items: center;
         }
-        &.nav-right {
-          display: grid;
-          grid-template-columns: 1fr 2fr;
+        &.ul-right {
           align-items: center;
         }
       }
@@ -184,8 +187,6 @@ aside {
 
     ul {
       padding: 0 $zoo_header_space;
-      display: grid;
-      grid-template-columns: 1fr 2fr;
       grid-auto-rows: 40px;
       grid-auto-flow: column;
 
