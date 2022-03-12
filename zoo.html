@@ -12,16 +12,16 @@
     <header>
       <nav>
         <div class="sideMenu-wrapper">
-          <label for="sideMenu-check">
-            <ul>
+          <input type="checkbox" id="sideMenu-left" class="sideMenu-check" hidden checked />
+          <label for="sideMenu-left" class="sideMenu-open">
+            <ul class="nav-left">
               <li>Zoo</li>
               <li>Contact</li>
               <li>Team</li>
               <li>Clients</li>
             </ul>
           </label>
-          <input type="checkbox" id="sideMenu-check" hidden checked />
-          <aside>
+          <aside class="left">
             <div class="sideMenu__row">
               <div class="sideMenu__title">zoo</div>
               <div class="sideMenu__column sideMenu__column--span2">
@@ -157,12 +157,29 @@
               </div>
             </div>
           </aside>
-          <label for="sideMenu-check" class="sideMenu-close">✕</label>
+          <label for="sideMenu-left" class="sideMenu-close">✕</label>
         </div>
-        <ul>
-          <li>Projects</li>
-          <li>Tous</li>
-        </ul>
+        <div class="sideMenu-wrapper">
+          <input type="checkbox" id="sideMenu-right" class="sideMenu-check" hidden checked />
+          <label for="sideMenu-right" class="sideMenu-open">
+            <ul class="nav-right">
+              <li>Projets</li>
+              <li>Tous</li>
+            </ul>
+          </label>
+          <aside class="right">
+            <ul>
+              <li>art & culture</li>
+              <li>campagnes</li>
+              <li>identités</li>
+              <li>édition</li>
+              <li>institutionnel</li>
+              <li>architecture</li>
+              <li>digital</li>
+            </ul>
+          </aside>
+          <label for="sideMenu-right" class="sideMenu-close">✕</label>
+        </div>
       </nav>
     </header>
     <main>
