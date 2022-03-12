@@ -38,10 +38,10 @@ header {
       display: flex;
       text-transform: uppercase;
       font-size: 10px;
+      @extend %miniTitle;
       &:first-child {
         li {
           margin-right: 60px;
-          @extend %miniTitle;
         }
       }
     }

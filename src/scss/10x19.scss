@@ -1,0 +1,54 @@
+@import "_variables";
+
+body {
+  height: 100vh;
+  background-color: $_10x19_bg;
+  display: grid;
+  grid-template-columns: 1.5fr 2fr 1.5fr;
+  grid-template-rows: repeat(7, minmax(100px, 1fr));
+  gap: 1px;
+  & > * {
+    color: $_10x19_bg;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    text-transform: uppercase;
+  }
+}
+
+.number__row,
+.center-image {
+  grid-row-end: span 5;
+}
+
+.number__row {
+  background-color: $_10x19_bg;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  // align-items: stretch;
+  &:nth-child(odd) {
+    order: 1;
+  }
+
+  .number {
+    width: 100%;
+    height: calc(20% - 1px);
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.center-image {
+  padding: 10px;
+  img {
+    width: 100%;
+  }
+}
+
+.scrolling__text {
+}
