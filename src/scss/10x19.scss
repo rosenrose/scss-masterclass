@@ -27,28 +27,52 @@ body {
   background-color: $_10x19_bg;
   display: flex;
   flex-direction: column-reverse;
-  justify-content: space-between;
-  // align-items: stretch;
-  &:nth-child(odd) {
+  gap: 1px;
+  &:nth-child(even) {
     order: 1;
   }
 
   .number {
     width: 100%;
-    height: calc(20% - 1px);
+    height: 100%;
     background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    &:hover {
+      color: white;
+      background-color: $_10x19_bg;
+    }
   }
 }
 
 .center-image {
+  grid-column-start: 2;
   padding: 10px;
   img {
-    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
   }
+}
+.center-image ~ * {
+  order: 2;
 }
 
 .scrolling__text {
+  white-space: nowrap;
+  overflow: hidden;
+  span {
+    animation: scrollText 15s linear infinite;
+  }
+}
+
+@keyframes scrollText {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
