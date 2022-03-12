@@ -23,6 +23,7 @@ header {
       align-items: center;
       padding: 0 15px;
       padding-bottom: 10px;
+      cursor: pointer;
       &:hover {
         background-color: $zoo_bg;
         &:first-child {
@@ -41,7 +42,6 @@ header {
         }
       }
       li {
-        cursor: pointer;
         &:first-child {
           margin-right: 120px;
         }
@@ -77,14 +77,13 @@ main {
 }
 
 #sideMenu {
-  display: none;
   &:checked ~ aside {
-    display: flex;
+    display: none;
   }
 }
 
 aside {
-  display: none;
+  display: flex;
   width: 67%;
   height: 100vh;
   padding-bottom: 100px;
