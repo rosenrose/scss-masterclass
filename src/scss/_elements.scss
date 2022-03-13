@@ -1,0 +1,19 @@
+%categoryTitle {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+%btn {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+  padding: 10px 35px;
+  border: $schwartz_border;
+  border-radius: 99px;
+  transition: all 0.3s linear;
+  &:hover {
+    color: white;
+    background-color: black;
+  }
+}
