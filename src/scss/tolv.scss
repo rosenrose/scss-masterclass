@@ -1,0 +1,73 @@
+@import "_variables";
+@import url("https://fonts.googleapis.com/css?family=Yrsa:400,500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap");
+
+body {
+  font-family: "Montserrat";
+  margin-top: $tolv_header_height;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: $tolv_header_height;
+  padding: 0 7%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  background-color: white;
+
+  nav {
+    ul {
+      display: flex;
+      font-family: "Montserrat", sans-serif;
+      li {
+        margin-right: 10px;
+      }
+    }
+  }
+  .logo {
+    justify-self: center;
+    font-size: 48px;
+    font-weight: 500;
+    font-family: "Yrsa";
+    display: flex;
+    div {
+      transform: rotateZ(-15deg);
+      margin-left: -2px;
+    }
+  }
+  span {
+    justify-self: end;
+  }
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: calc(100vh - #{$tolv_header_height});
+
+  .hero__img {
+    background-image: url("../img/tolv/home_kitsune-2.jpg");
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .hero__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+      text-align: center;
+      width: 70%;
+      font-size: 48px;
+      font-weight: 500;
+      font-family: "Yrsa";
+      margin-bottom: 40px;
+    }
+  }
+}

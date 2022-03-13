@@ -63,7 +63,7 @@ header {
 
       ul {
         height: 100%;
-        padding: 0 $zoo_header_space;
+        padding: 0 $zoo_header_padding;
         padding-bottom: 10px;
         text-transform: lowercase;
 
@@ -185,7 +185,7 @@ aside {
     top: 45px;
 
     ul {
-      padding: 0 $zoo_header_space;
+      padding: 0 $zoo_header_padding;
       grid-auto-rows: 40px;
       grid-auto-flow: column;
 
