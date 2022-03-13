@@ -2,7 +2,7 @@
 
 header {
   width: 100%;
-  height: 50px;
+  height: $zoo_header_height;
   background-color: white;
   position: fixed;
   top: 0;
@@ -84,7 +84,7 @@ header {
 
 main {
   width: 100%;
-  margin-top: 50px;
+  margin-top: $zoo_header_height;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 50vh;
