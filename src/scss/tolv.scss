@@ -121,7 +121,7 @@ header {
     &:nth-child(1),
     &:nth-child(5),
     &:nth-child(7) {
-      grid-column-end: span 2;
+      grid-column: span 2;
     }
 
     &:hover > img {
