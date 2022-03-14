@@ -1,6 +1,81 @@
 @import "_variables";
+@import "_elements";
 @import url("https://fonts.googleapis.com/css?family=Nunito|PT+Serif:400,400i&display=swap");
 
 body {
   font-family: "PT Serif", serif;
+  color: $donica_black;
+  background-color: #f0efeb;
+  padding: 40px;
+}
+
+header {
+  h1 {
+    font-size: 40px;
+    letter-spacing: 1px;
+    margin-bottom: 175px;
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.works {
+  .works__header,
+  .works__work {
+    display: grid;
+    grid-template-columns: 1fr 4fr 7fr;
+    align-items: center;
+    padding-bottom: 15px;
+  }
+
+  .works__header {
+    span {
+      @extend %tinyText;
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    // gap: 10px;
+
+    li {
+      border-top: 1px solid $donica_black;
+      padding-top: 20px;
+      font-size: 24px;
+      cursor: pointer;
+      &:hover {
+        font-style: italic;
+      }
+    }
+  }
+}
+
+.education,
+.about {
+  font-size: 30px;
+  line-height: 1.5;
+
+  span {
+    @extend %tinyText;
+    margin-right: 10px;
+  }
+
+  a {
+    color: inherit;
+    &:hover {
+      font-style: italic;
+    }
+  }
+}
+
+.notes {
+  @extend %tinyText;
+  color: inherit;
+  margin-top: -20px;
+  margin-bottom: 20px;
 }
