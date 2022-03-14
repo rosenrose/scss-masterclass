@@ -1,5 +1,5 @@
 @import "_variables";
-@import "_elements";
+@import "_mixins";
 @import url("https://fonts.googleapis.com/css2?family=B612+Mono&family=DM+Serif+Display:ital@1&display=swap");
 
 body {
@@ -15,14 +15,14 @@ header {
 
   nav {
     ul {
-      @extend %gridBorder;
+      @include gridBorder();
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: repeat(2, 60px);
       // padding: 1px;
 
       li {
-        @extend %gridBorderChild;
+        @include gridBorderChild();
         display: flex;
         justify-content: center;
         align-items: center;
@@ -72,14 +72,14 @@ main {
   }
 
   .product__wrapper {
-    @extend %gridBorder;
+    @include gridBorder();
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 80vh auto;
 
     .product,
     .arrivals__category {
-      @extend %gridBorderChild;
+      @include gridBorderChild();
     }
 
     .product {
@@ -112,13 +112,13 @@ main {
 footer {
   height: 200px;
   margin: 100px 0;
-  @extend %gridBorder;
+  @include gridBorder();
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 5fr 1fr;
 
   & > div {
-    @extend %gridBorderChild;
+    @include gridBorderChild();
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -152,13 +152,13 @@ footer {
 
   .footer__signup {
     height: 40px;
-    @extend %gridBorder;
+    @include gridBorder();
     display: grid;
     grid-template-columns: 3fr 1fr 1fr;
     place-items: center center;
 
     & > * {
-      @extend %gridBorderChild;
+      @include gridBorderChild();
       padding: 10px;
     }
     input {

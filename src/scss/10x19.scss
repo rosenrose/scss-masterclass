@@ -1,15 +1,16 @@
 @import "_variables";
+@import "_mixins";
 
 body {
   height: 100vh;
-  background-color: $_10x19_bg;
+  @include gridBorder($_10x19_bg, "none");
   display: grid;
   grid-template-columns: 1.5fr 2fr 1.5fr;
   grid-template-rows: repeat(7, minmax(100px, 1fr));
-  gap: 1px;
+
   & > * {
     color: $_10x19_bg;
-    background-color: white;
+    @include gridBorderChild();
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,18 +25,15 @@ body {
 }
 
 .number__row {
-  background-color: $_10x19_bg;
+  @include gridBorder($_10x19_bg, "none");
   display: flex;
   flex-direction: column-reverse;
-  gap: 1px;
   &:nth-child(even) {
     order: 1;
   }
 
   .number {
-    width: 100%;
-    height: 100%;
-    background-color: white;
+    @include gridBorderChild();
     display: flex;
     justify-content: center;
     align-items: center;
