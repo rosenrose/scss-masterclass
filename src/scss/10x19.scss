@@ -14,7 +14,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 22px;
+    font-size: 1.4rem;
     text-transform: uppercase;
   }
 }
@@ -48,7 +48,7 @@ body {
 
 .center-image {
   grid-column-start: 2;
-  padding: 10px;
+  padding: 1rem;
   img {
     max-width: 100%;
     max-height: 100%;

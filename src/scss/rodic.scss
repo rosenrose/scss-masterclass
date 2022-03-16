@@ -3,13 +3,12 @@
 body,
 header {
   display: grid;
-  grid-template-columns: 1fr 3fr;
-  padding: 0 20px;
+  grid-template-columns: 1fr 2.9fr;
+  padding: 0 1.2rem;
 }
 
 body {
   padding-top: $rodic_header_height;
-  // font-size: 13px;
 }
 
 a {
@@ -22,12 +21,11 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  height: 50px;
+  height: $rodic_header_height;
   background-color: white;
   align-items: center;
 
   h1 {
-    font-size: 16px;
     font-weight: 500;
     cursor: pointer;
     &:hover,
@@ -42,7 +40,7 @@ header {
   nav {
     ul {
       display: flex;
-      gap: 20px;
+      gap: 1.3rem;
 
       li {
         font-weight: 300;
@@ -58,13 +56,13 @@ main {
   grid-column-start: 2;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 20px;
-  row-gap: 80px;
+  column-gap: 1.2rem;
+  row-gap: 5rem;
 
   .photo {
     img {
       width: 100%;
-      margin-bottom: 10px;
+      margin-bottom: 0.8rem;
     }
 
     h4 {
@@ -78,17 +76,18 @@ main {
   .description {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 1.3rem;
 
     h3 {
       font-weight: 500;
     }
     p {
-      line-height: 1.1;
+      font-weight: 300;
+      line-height: 1.2;
     }
     &:first-child {
       h3 {
-        margin-top: 20px;
+        margin-top: 1.2rem;
       }
     }
   }

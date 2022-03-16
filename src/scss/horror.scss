@@ -12,23 +12,23 @@ header {
   background-color: $horror_white;
   width: $horror_fixedWidth;
   height: 100%;
-  padding: 10vh 0 72px 72px;
+  padding: 10vh 0 4rem 4rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 13rem;
   color: $horror_red;
 
   h1 {
-    font-size: 85px;
+    font-size: 4.5rem;
     width: 50%;
     text-transform: uppercase;
-    letter-spacing: 5px;
+    letter-spacing: 0.8rem;
   }
 
   h3 {
-    font-size: 26px;
+    font-size: 1.6rem;
     // font-weight: 300;
-    margin-bottom: 30px;
+    margin-bottom: 2rem;
   }
 
   h3,
@@ -44,26 +44,26 @@ header {
 
   p {
     text-align: justify;
-    font-size: 18px;
+    font-size: 1.1rem;
     font-weight: 600;
-    margin-bottom: 40px;
+    margin-bottom: 2rem;
   }
 
   nav {
     ul {
       display: flex;
       flex-wrap: wrap;
+      gap: 1rem;
 
       li {
         cursor: pointer;
-        margin-right: 12px;
-        font-size: 16px;
+        font-size: 1rem;
         font-weight: 600;
         color: black;
         opacity: 0.5;
-        margin-bottom: 12px;
-        padding-bottom: 5px;
-        border-bottom: 2px solid rgba(0, 0, 0, 1);
+        margin-bottom: -0.5rem;
+        padding-bottom: 0.4rem;
+        border-bottom: 1px solid black;
         &:hover {
           opacity: 1;
         }
@@ -95,18 +95,18 @@ main {
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
-        margin-bottom: 25px;
+        margin-bottom: 1.6rem;
 
         h4 {
-          font-size: 32px;
+          font-size: 2rem;
         }
         h5 {
-          letter-spacing: 5px;
+          letter-spacing: 0.3rem;
         }
       }
       img {
         width: 100%;
-        box-shadow: 0 80px 80px -80px #2d0806;
+        box-shadow: 0 5rem 5rem -5rem #2d0806;
       }
     }
   }

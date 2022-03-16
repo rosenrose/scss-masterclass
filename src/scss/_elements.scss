@@ -1,16 +1,16 @@
 %categoryTitle {
-  font-size: 22px;
+  font-size: 1.5rem;
   font-weight: 600;
-  margin-bottom: 50px;
+  margin-bottom: 3rem;
 }
 
 %btn {
   text-decoration: none;
   color: inherit;
   font-weight: 500;
-  padding: 10px 35px;
+  padding: 0.4rem 2rem;
   border: $schwartz_border;
-  border-radius: 99px;
+  border-radius: 2rem;
   transition: all 0.3s linear;
   &:hover {
     color: white;
@@ -20,6 +20,6 @@
 
 %tinyText {
   color: $donica_red;
-  font-size: 14px;
+  font-size: 0.9rem;
   font-family: "Nunito";
 }

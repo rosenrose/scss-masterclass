@@ -4,21 +4,19 @@
 
 body {
   font-family: "B612 Mono";
-  padding: 45px;
+  padding: 2.8rem;
 }
 
 header {
   width: 100%;
-  // position: fixed;
-  // top: 0;
-  margin-bottom: 100px;
+  margin-bottom: 6.2rem;
 
   nav {
     ul {
       @include gridBorder();
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: repeat(2, 60px);
+      grid-template-rows: repeat(2, 3.8rem);
       // padding: 1px;
 
       li {
@@ -28,7 +26,7 @@ header {
         align-items: center;
         &:nth-child(2) {
           grid-column: span 2;
-          font-size: 36px;
+          font-size: 2.3rem;
           text-transform: uppercase;
         }
       }
@@ -42,13 +40,13 @@ main {
     text-align: center;
   }
   h1 {
-    font-size: 60px;
+    font-size: 3.75rem;
     font-family: "DM Serif Display", monospace;
-    margin-bottom: 20px;
+    margin-bottom: 1.2rem;
   }
   h6 {
-    font-size: 12px;
-    margin-bottom: 50px;
+    font-size: 0.75rem;
+    margin-bottom: 3rem;
   }
 }
 
@@ -56,7 +54,7 @@ main {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   height: 70vh;
-  margin-bottom: 150px;
+  margin-bottom: 9.3rem;
 
   .hero__img {
     width: 100%;
@@ -65,9 +63,9 @@ main {
 
 .arrivals {
   .arrivals__title {
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: "DM Serif Display", monospace;
-    margin-bottom: 70px;
+    margin-bottom: 4.4rem;
     text-align: center;
   }
 
@@ -85,8 +83,8 @@ main {
     .product {
       display: grid;
       grid-template-rows: 80% auto;
-      gap: 20px;
-      padding: 30px;
+      gap: 1.2rem;
+      padding: 1.9rem;
 
       .product__photo {
         width: 100%;
@@ -95,23 +93,23 @@ main {
       .product__data {
         display: flex;
         flex-direction: column;
-        gap: 10px;
-        font-size: 12px;
+        gap: 0.8rem;
+        font-size: 0.75rem;
       }
     }
 
     .arrivals__category {
       grid-column: span 2;
       text-align: center;
-      padding: 20px 0;
-      font-size: 20px;
+      padding: 1.3rem 0;
+      font-size: 1.25rem;
     }
   }
 }
 
 footer {
-  height: 200px;
-  margin: 100px 0;
+  height: 12.5rem;
+  margin: 6.3rem 0;
   @include gridBorder();
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -121,8 +119,8 @@ footer {
     @include gridBorderChild();
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    padding: 20px;
+    gap: 1.2rem;
+    padding: 1.2rem;
     &:first-child {
       grid-column: span 2;
     }
@@ -131,13 +129,13 @@ footer {
   .footer__bottom {
     grid-column: 1 / -1;
     flex-direction: row;
-    padding: 0 20px;
+    padding: 0 1.2rem;
     justify-content: space-between;
     align-items: center;
 
     ul {
       display: flex;
-      gap: 15px;
+      gap: 1rem;
     }
     & > * {
       width: 33%;
@@ -146,12 +144,12 @@ footer {
   }
 
   .footer__title {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-family: "DM Serif Display", monospace;
   }
 
   .footer__signup {
-    height: 40px;
+    height: 2.5rem;
     @include gridBorder();
     display: grid;
     grid-template-columns: 3fr 1fr 1fr;
@@ -159,7 +157,7 @@ footer {
 
     & > * {
       @include gridBorderChild();
-      padding: 10px;
+      padding: 0.6rem;
     }
     input {
       border: none;
@@ -178,10 +176,10 @@ footer {
     grid-auto-flow: column;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    column-gap: 20px;
+    column-gap: 1.2rem;
   }
 
   .footer__item {
-    font-size: 10px;
+    font-size: 0.6rem;
   }
 }

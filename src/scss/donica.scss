@@ -6,30 +6,30 @@ body {
   font-family: "PT Serif", serif;
   color: $donica_black;
   background-color: #f0efeb;
-  padding: 40px;
+  padding: 2.5rem;
 }
 
 header {
   h1 {
-    font-size: 40px;
+    font-size: 2.7rem;
     letter-spacing: 1px;
-    margin-bottom: 175px;
+    margin-bottom: 12rem;
   }
 }
 
 main {
   display: flex;
   flex-direction: column;
-  gap: 80px;
+  gap: 5rem;
 }
 
 .works {
   .works__header,
   .works__work {
     display: grid;
-    grid-template-columns: 1fr 4fr 7fr;
+    grid-template-columns: 1.2fr 4.2fr 7fr;
     align-items: center;
-    padding-bottom: 15px;
+    padding-bottom: 0.9rem;
   }
 
   .works__header {
@@ -45,8 +45,8 @@ main {
 
     li {
       border-top: 1px solid $donica_black;
-      padding-top: 20px;
-      font-size: 24px;
+      padding-top: 1.5rem;
+      font-size: 1.6rem;
       cursor: pointer;
       &:hover {
         font-style: italic;
@@ -57,12 +57,12 @@ main {
 
 .education,
 .about {
-  font-size: 30px;
+  font-size: 2rem;
   line-height: 1.5;
 
   span {
     @extend %tinyText;
-    margin-right: 10px;
+    margin-right: 0.8rem;
   }
 
   a {
@@ -76,6 +76,6 @@ main {
 .notes {
   @extend %tinyText;
   color: inherit;
-  margin-top: -20px;
-  margin-bottom: 20px;
+  margin-top: -1.2rem;
+  margin-bottom: 1.2rem;
 }

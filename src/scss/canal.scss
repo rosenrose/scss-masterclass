@@ -14,11 +14,12 @@ h4 {
 }
 
 .btn {
+  font-size: 0.8rem;
   text-transform: lowercase;
   text-decoration: none;
   color: black;
   border: 1px solid black;
-  padding: 20px 50px;
+  padding: 1.5rem 3.2rem;
   transition: all 0.2s linear;
   &:hover {
     color: white;
@@ -42,8 +43,8 @@ nav {
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
-      padding: 80px 0;
-      font-size: 18px;
+      padding: 5rem 0;
+      font-size: 1.2rem;
       &:nth-child(1) {
         background-color: #5da3ec;
       }
@@ -66,19 +67,19 @@ nav {
 main {
   display: flex;
   flex-direction: column;
-  gap: 120px;
+  gap: 8rem;
   & > *:not(header) {
     padding: 0 $canal_padding;
   }
 }
 
 header {
-  margin-top: 250px;
+  margin-top: 14rem;
   h1 {
-    width: 66%;
+    width: 67%;
     padding-left: $canal_padding;
-    margin-bottom: 100px;
-    font-size: 80px;
+    margin-bottom: 7rem;
+    font-size: 4.5rem;
     line-height: 1.1;
   }
 
@@ -94,8 +95,8 @@ header {
 .about {
   h2 {
     width: 50%;
-    font-size: 120px;
-    margin-bottom: 100px;
+    font-size: 7rem;
+    margin-bottom: 6rem;
   }
 
   .about__columns {
@@ -113,8 +114,9 @@ header {
         width: 100%;
       }
       p {
-        font-size: 14px;
-        line-height: 1.5;
+        font-size: 0.7rem;
+        letter-spacing: 1px;
+        line-height: 1.6;
       }
     }
   }
@@ -136,20 +138,20 @@ header {
   }
 
   .events__header {
-    font-size: 64px;
+    font-size: 3.5rem;
     h4 {
-      font-size: 94px;
+      font-size: 5.5rem;
     }
   }
 
   .events__list {
-    margin-top: 120px;
-    margin-bottom: 40px;
+    margin-top: 7.5rem;
+    margin-bottom: 2.5rem;
 
     .events__event {
       p {
-        font-size: 14px;
-        margin: 20px 0;
+        font-size: 0.8rem;
+        margin: 1.2rem 0;
         line-height: 1.5;
       }
     }
@@ -172,7 +174,7 @@ header {
   h3 {
     text-align: center;
     width: 50%;
-    font-size: 64px;
+    font-size: 3.5rem;
   }
   img {
     width: 100%;
@@ -182,10 +184,10 @@ header {
 
 .contact {
   text-align: center;
-  margin-bottom: 200px;
+  margin-bottom: 12.5rem;
 
   h4 {
-    font-size: 56px;
-    margin-bottom: 60px;
+    font-size: 3rem;
+    margin-bottom: 4rem;
   }
 }
